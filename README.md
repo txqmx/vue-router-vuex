@@ -1,4 +1,3 @@
-简易版vue-router，vuex 学习使用
+vue-router，vuex原理学习
 
-vue-cli3+vue-router+vuex 工程
 

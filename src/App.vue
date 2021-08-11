@@ -1,16 +1,22 @@
 <template>
   <div id="app">
-    {{$store.state.age}}<br>
-    我的年龄 {{$store.getters.myAge}}
-    <button @click="$store.state.age =100">更改</button>
-    <button @click="syncChange()">同步更改</button>
-    <button @click="asyncChange()">异步更改</button>
+    <div id="nav">
+      <router-link to="/">home</router-link>
+      <router-link to="/about">about</router-link>
+      <!--{{this._routerRoot._route.path}}-->
+    </div>
+    <router-view></router-view>
+<!--    {{$store.state.age}}<br>-->
+<!--    我的年龄 {{$store.getters.myAge}}-->
+<!--    <button @click="$store.state.age =100">更改</button>-->
+<!--    <button @click="syncChange()">同步更改</button>-->
+<!--    <button @click="asyncChange()">异步更改</button>-->
 
-    <!--{{$store.state.a.age}}-->
-    <!--{{$store.state.b.age}}-->
-    <!--{{$store.state.b.c.age}}-->
+<!--    &lt;!&ndash;{{$store.state.a.age}}&ndash;&gt;-->
+<!--    &lt;!&ndash;{{$store.state.b.age}}&ndash;&gt;-->
+<!--    &lt;!&ndash;{{$store.state.b.c.age}}&ndash;&gt;-->
 
-    {{age}}{{myAge}}
+<!--    {{age}}{{myAge}}-->
   </div>
 </template>
 
